@@ -623,5 +623,30 @@ A complete Postman collection is included in the root directory: [`postman_colle
 | `409 Conflict` | Resource state conflict | Overbooking (0 slots available), duplicate booking, duplicate email on signup |
 | `422 Unprocessable Content` | Request validation failure | Missing fields, invalid email format, password > 72 bytes, scheduling class in past |
 | `500 Internal Error` | Unexpected server error | Uncaught exceptions with safe masking |
-#   f i t n e s s - b o o k i n g - a p i  
- 
+
+## API Reference
+
+#### Get all items
+
+```http
+  GET /api/items
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+#### Get item
+
+```http
+  GET /api/items/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+#### add(num1, num2)
+
+Takes two numbers and returns the sum.
+
