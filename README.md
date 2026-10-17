@@ -131,7 +131,7 @@ fitness-booking-api/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/fitness-booking-api.git
+   git clone https://github.com/julfikar-91/fitness-booking-api.git
    cd fitness-booking-api
    ```
 
